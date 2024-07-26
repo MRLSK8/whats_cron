@@ -32,10 +32,10 @@ app
     client.on("ready", async () => {
       console.log("Client is ready!");
 
-      cron.schedule("45 8 * * 1-5", () => {
-        console.log("sending message");
-        client.sendMessage(Grupo_test, "Testando mensagem");
-      });
+      // cron.schedule("45 8 * * 1-5", () => {
+      console.log("sending message");
+      client.sendMessage(Grupo_test, "Testando mensagem");
+      // });
     });
 
     client.initialize();
