@@ -22,7 +22,7 @@ app
   .then(() => {
     const Grupo_test = process.env.USER_ID;
 
-    console.log("running server");
+    console.log("running server", { Grupo_test });
 
     client.on("qr", (qr) => {
       console.log("should read qr code");
