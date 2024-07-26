@@ -1,23 +1,62 @@
-2024/07/26-10:46:40.391 8303 Reusing MANIFEST /Users/jose.lima/Desktop/Teste/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/07/26-10:46:40.392 8303 Recovering log #201
-2024/07/26-10:46:40.408 8303 Reusing old log /Users/jose.lima/Desktop/Teste/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000201.log 
-2024/07/26-10:46:42.974 af03 Level-0 table #211: started
-2024/07/26-10:46:42.996 af03 Level-0 table #211: 148670 bytes OK
-2024/07/26-10:46:43.036 af03 Delete type=0 #201
-2024/07/26-10:46:43.037 af03 Manual compaction at level-0 from '\x00/\x00\x00\x00' @ 72057594037927935 : 1 .. '\x000\x00\x00\x00' @ 0 : 0; will stop at (end)
-2024/07/26-10:46:44.788 15a03 Compacting 1@1 + 6@2 files
-2024/07/26-10:46:44.863 15a03 Generated table #212@1: 30488 keys, 2193307 bytes
-2024/07/26-10:46:44.931 15a03 Generated table #213@1: 3000 keys, 2157876 bytes
-2024/07/26-10:46:44.986 15a03 Generated table #214@1: 3270 keys, 2159722 bytes
-2024/07/26-10:46:45.069 15a03 Generated table #215@1: 28340 keys, 2251838 bytes
-2024/07/26-10:46:45.169 15a03 Generated table #216@1: 51259 keys, 2246742 bytes
-2024/07/26-10:46:45.229 15a03 Generated table #217@1: 12151 keys, 262953 bytes
-2024/07/26-10:46:45.229 15a03 Compacted 1@1 + 6@2 files => 11272438 bytes
-2024/07/26-10:46:45.266 15a03 compacted to: files[ 0 0 6 0 0 0 0 ]
-2024/07/26-10:46:45.266 15a03 Delete type=2 #203
-2024/07/26-10:46:45.266 15a03 Delete type=2 #205
-2024/07/26-10:46:45.266 15a03 Delete type=2 #211
-2024/07/26-10:46:45.267 15a03 Delete type=2 #204
-2024/07/26-10:46:45.267 15a03 Delete type=2 #206
-2024/07/26-10:46:45.267 15a03 Delete type=2 #207
-2024/07/26-10:46:45.267 15a03 Delete type=2 #208
+2024/07/26-11:23:02.026 8703 Reusing MANIFEST /Users/jose.lima/Desktop/Teste/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/07/26-11:23:02.026 8703 Recovering log #453
+2024/07/26-11:23:02.035 8703 Reusing old log /Users/jose.lima/Desktop/Teste/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000453.log 
+2024/07/26-11:23:03.911 15803 Compacting 1@1 + 10@2 files
+2024/07/26-11:23:03.992 15803 Generated table #460@1: 40140 keys, 2203572 bytes
+2024/07/26-11:23:04.046 15803 Generated table #461@1: 2425 keys, 2158000 bytes
+2024/07/26-11:23:04.111 15803 Generated table #462@1: 3654 keys, 2163088 bytes
+2024/07/26-11:23:04.173 15803 Generated table #463@1: 2337 keys, 2152660 bytes
+2024/07/26-11:23:04.213 15803 Generated table #464@1: 2788 keys, 2157822 bytes
+2024/07/26-11:23:04.262 15803 Generated table #465@1: 3876 keys, 2161803 bytes
+2024/07/26-11:23:04.336 15803 Generated table #466@1: 28329 keys, 2225139 bytes
+2024/07/26-11:23:04.416 15803 Generated table #467@1: 26098 keys, 2268427 bytes
+2024/07/26-11:23:04.498 15803 Generated table #468@1: 46848 keys, 2253591 bytes
+2024/07/26-11:23:04.567 15803 Generated table #469@1: 18968 keys, 2207996 bytes
+2024/07/26-11:23:04.567 15803 Compacted 1@1 + 10@2 files => 21952098 bytes
+2024/07/26-11:23:04.623 15803 compacted to: files[ 0 0 12 0 0 0 0 ]
+2024/07/26-11:23:04.624 15803 Delete type=2 #448
+2024/07/26-11:23:04.624 15803 Delete type=2 #449
+2024/07/26-11:23:04.624 15803 Delete type=2 #447
+2024/07/26-11:23:04.624 15803 Delete type=2 #452
+2024/07/26-11:23:04.624 15803 Delete type=2 #446
+2024/07/26-11:23:04.624 15803 Delete type=2 #450
+2024/07/26-11:23:04.624 15803 Delete type=2 #444
+2024/07/26-11:23:04.624 15803 Delete type=2 #445
+2024/07/26-11:23:04.624 15803 Delete type=2 #451
+2024/07/26-11:23:04.624 15803 Delete type=2 #455
+2024/07/26-11:23:04.624 15803 Delete type=2 #443
+2024/07/26-11:23:04.653 15803 Level-0 table #471: started
+2024/07/26-11:23:04.676 15803 Level-0 table #471: 97648 bytes OK
+2024/07/26-11:23:04.718 15803 Delete type=0 #453
+2024/07/26-11:23:04.720 15803 Manual compaction at level-0 from '\x001\x00\x00\x00' @ 72057594037927935 : 1 .. '\x002\x00\x00\x00' @ 0 : 0; will stop at '\x001\x00\x00\x05' @ 1296028 : 1
+2024/07/26-11:23:04.721 15803 Compacting 1@0 + 0@1 files
+2024/07/26-11:23:04.743 15803 Generated table #472@0: 1953 keys, 20037 bytes
+2024/07/26-11:23:04.767 15803 Generated table #473@0: 1390 keys, 37675 bytes
+2024/07/26-11:23:04.767 15803 Compacted 1@0 + 0@1 files => 57712 bytes
+2024/07/26-11:23:04.807 15803 compacted to: files[ 0 2 12 0 0 0 0 ]
+2024/07/26-11:23:04.808 15803 Delete type=2 #471
+2024/07/26-11:23:04.808 15803 Manual compaction at level-0 from '\x001\x00\x00\x05' @ 1296028 : 1 .. '\x002\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/07/26-11:23:06.397 16503 Compacting 1@1 + 10@2 files
+2024/07/26-11:23:06.464 16503 Generated table #474@1: 40147 keys, 2204814 bytes
+2024/07/26-11:23:06.514 16503 Generated table #475@1: 2425 keys, 2158000 bytes
+2024/07/26-11:23:06.567 16503 Generated table #476@1: 3654 keys, 2163088 bytes
+2024/07/26-11:23:06.615 16503 Generated table #477@1: 2337 keys, 2152660 bytes
+2024/07/26-11:23:06.642 16503 Generated table #478@1: 2788 keys, 2157822 bytes
+2024/07/26-11:23:06.691 16503 Generated table #479@1: 3876 keys, 2161803 bytes
+2024/07/26-11:23:06.782 16503 Generated table #480@1: 28329 keys, 2225139 bytes
+2024/07/26-11:23:06.867 16503 Generated table #481@1: 26098 keys, 2268427 bytes
+2024/07/26-11:23:06.942 16503 Generated table #482@1: 46848 keys, 2253591 bytes
+2024/07/26-11:23:07.008 16503 Generated table #483@1: 18968 keys, 2207996 bytes
+2024/07/26-11:23:07.008 16503 Compacted 1@1 + 10@2 files => 21953340 bytes
+2024/07/26-11:23:07.048 16503 compacted to: files[ 0 1 12 0 0 0 0 ]
+2024/07/26-11:23:07.049 16503 Delete type=2 #466
+2024/07/26-11:23:07.050 16503 Delete type=2 #472
+2024/07/26-11:23:07.050 16503 Delete type=2 #467
+2024/07/26-11:23:07.050 16503 Delete type=2 #465
+2024/07/26-11:23:07.050 16503 Delete type=2 #464
+2024/07/26-11:23:07.050 16503 Delete type=2 #460
+2024/07/26-11:23:07.050 16503 Delete type=2 #461
+2024/07/26-11:23:07.050 16503 Delete type=2 #463
+2024/07/26-11:23:07.050 16503 Delete type=2 #462
+2024/07/26-11:23:07.050 16503 Delete type=2 #469
+2024/07/26-11:23:07.050 16503 Delete type=2 #468

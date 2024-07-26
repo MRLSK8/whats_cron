@@ -1,4 +1,5 @@
 const qrcode = require("qrcode-terminal");
+const cron = require("node-cron");
 
 const fastify = require("fastify");
 
@@ -13,27 +14,30 @@ const client = new Client({
 // const { Client } = require("whatsapp-web.js");
 // const client = new Client();
 
+cron.schedule("23 11 * * 1-5", () => {
+  const Grupo_test = process.env.USER_ID;
+  console.log("Grupo_test", { Grupo_test });
+
+  client.on("qr", (qr) => {
+    console.log("should read qr code");
+    qrcode.generate(qr, { small: true });
+  });
+
+  client.on("ready", async () => {
+    console.log("Client is ready!");
+
+    console.log("sending message");
+    client.sendMessage(Grupo_test, "Testando mensagem");
+  });
+
+  client.initialize();
+});
+
 app
   .listen({
     host: "0.0.0.0",
     port: process.env.PORT ? Number(process.env.PORT) : "3333",
   })
   .then(() => {
-    const Grupo_test = process.env.USER_ID;
-
-    console.log("running server", { Grupo_test });
-
-    client.on("qr", (qr) => {
-      console.log("should read qr code");
-      qrcode.generate(qr, { small: true });
-    });
-
-    client.on("ready", async () => {
-      console.log("Client is ready!");
-
-      console.log("sending message");
-      client.sendMessage(Grupo_test, "Testando mensagem");
-    });
-
-    client.initialize();
+    console.log("running server");
   });
