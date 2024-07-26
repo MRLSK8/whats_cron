@@ -1,5 +1,4 @@
 const qrcode = require("qrcode-terminal");
-const cron = require("node-cron");
 
 const fastify = require("fastify");
 
@@ -32,10 +31,8 @@ app
     client.on("ready", async () => {
       console.log("Client is ready!");
 
-      cron.schedule("42 10 * * *", () => {
-        console.log("sending message");
-        client.sendMessage(Grupo_test, "Testando mensagem");
-      });
+      console.log("sending message");
+      client.sendMessage(Grupo_test, "Testando mensagem");
     });
 
     client.initialize();
