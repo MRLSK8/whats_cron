@@ -14,25 +14,6 @@ const client = new Client({
 // const { Client } = require("whatsapp-web.js");
 // const client = new Client();
 
-cron.schedule("35 11 * * 1-5", () => {
-  const Grupo_test = process.env.USER_ID;
-  console.log("Grupo_test", { Grupo_test });
-
-  client.on("qr", (qr) => {
-    console.log("should read qr code");
-    qrcode.generate(qr, { small: true });
-  });
-
-  client.on("ready", async () => {
-    console.log("Client is ready!");
-
-    console.log("sending message");
-    client.sendMessage(Grupo_test, "Testando mensagem");
-  });
-
-  client.initialize();
-});
-
 app
   .listen({
     host: "0.0.0.0",
@@ -40,4 +21,21 @@ app
   })
   .then(() => {
     console.log("running server");
+    const Grupo_test = process.env.USER_ID;
+    console.log("Grupo_test", { Grupo_test });
+
+    client.on("qr", (qr) => {
+      console.log("should read qr code");
+      qrcode.generate(qr, { small: true });
+    });
+
+    client.on("ready", async () => {
+      console.log("Client is ready!");
+      // cron.schedule("35 11 * * 1-5", () => {
+      console.log("sending message");
+      client.sendMessage(Grupo_test, "Testando mensagem");
+      // });
+    });
+
+    client.initialize();
   });
