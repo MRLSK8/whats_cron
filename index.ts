@@ -5,14 +5,14 @@ const fastify = require("fastify");
 
 const app = fastify();
 
-const { Client, LocalAuth } = require("whatsapp-web.js");
+// const { Client, LocalAuth } = require("whatsapp-web.js");
 
-const client = new Client({
-  authStrategy: new LocalAuth(),
-});
+// const client = new Client({
+//   authStrategy: new LocalAuth(),
+// });
 
-// const { Client } = require("whatsapp-web.js");
-// const client = new Client();
+const { Client } = require("whatsapp-web.js");
+const client = new Client();
 
 app
   .listen({
@@ -22,18 +22,19 @@ app
   .then(() => {
     const Grupo_test = process.env.USER_ID;
 
-    console.log("running server")
+    console.log("running server");
 
     client.on("qr", (qr) => {
+      console.log("should read qr code");
       qrcode.generate(qr, { small: true });
     });
 
     client.on("ready", async () => {
       console.log("Client is ready!");
 
-      cron.schedule("32 23 * * 4", () => {
-        console.log("sending message")
-        // client.sendMessage(Grupo_test, "Testando mensagem");
+      cron.schedule("45 8 * * 1-5", () => {
+        console.log("sending message");
+        client.sendMessage(Grupo_test, "Testando mensagem");
       });
     });
 
