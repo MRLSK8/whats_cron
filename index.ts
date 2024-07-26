@@ -16,7 +16,7 @@ client.on("qr", (qr) => {
 client.on("ready", async () => {
   console.log("Client is ready!");
 
-  cron.schedule("50 22 * * 4", () => {
+  cron.schedule("00 23 * * 4", () => {
     client.sendMessage(Grupo_test, "Testando mensagem");
   });
 });
