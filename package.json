@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^20.14.12",
+    "fastify": "^4.28.1",
     "node-cron": "^3.0.3",
     "qrcode-terminal": "^0.12.0",
     "tsx": "^4.16.2",
