@@ -14,7 +14,7 @@ const client = new Client({
 // const { Client } = require("whatsapp-web.js");
 // const client = new Client();
 
-cron.schedule("38 11 * * 1-5", () => {
+cron.schedule("35 11 * * 1-5", () => {
   const Grupo_test = process.env.USER_ID;
   console.log("Grupo_test", { Grupo_test });
 
