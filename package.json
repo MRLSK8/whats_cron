@@ -1,0 +1,25 @@
+{
+  "name": "teste",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "node --watch .",
+    "build": "tsup index.ts",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.14.12",
+    "node-cron": "^3.0.3",
+    "qrcode-terminal": "^0.12.0",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4",
+    "whatsapp-web.js": "^1.25.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.2.3"
+  }
+}
