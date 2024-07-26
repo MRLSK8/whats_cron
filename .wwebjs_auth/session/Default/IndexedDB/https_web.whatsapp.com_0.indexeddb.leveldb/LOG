@@ -1,14 +1,18 @@
-2024/07/25-23:37:53.537 14d0f Reusing MANIFEST /Users/jose.lima/Desktop/Teste/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/07/25-23:37:53.538 14d0f Recovering log #100
-2024/07/25-23:37:53.668 14d0f Reusing old log /Users/jose.lima/Desktop/Teste/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000100.log 
-2024/07/25-23:37:53.668 14d0f Delete type=2 #99
-2024/07/25-23:37:56.159 f903 Level-0 table #105: started
-2024/07/25-23:37:56.179 f903 Level-0 table #105: 724766 bytes OK
-2024/07/25-23:37:56.217 f903 Delete type=0 #100
-2024/07/25-23:37:56.218 f903 Manual compaction at level-0 from '\x00*\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00+\x00\x00\x00' @ 0 : 0; will stop at (end)
-2024/07/25-23:37:58.396 f903 Compacting 1@1 + 1@2 files
-2024/07/25-23:37:58.505 f903 Generated table #106@1: 42554 keys, 2199435 bytes
-2024/07/25-23:37:58.506 f903 Compacted 1@1 + 1@2 files => 2199435 bytes
-2024/07/25-23:37:58.546 f903 compacted to: files[ 0 0 1 0 0 0 0 ]
-2024/07/25-23:37:58.547 f903 Delete type=2 #102
-2024/07/25-23:37:58.547 f903 Delete type=2 #105
+2024/07/26-10:37:36.046 11703 Reusing MANIFEST /Users/jose.lima/Desktop/Teste/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/07/26-10:37:36.047 11703 Recovering log #148
+2024/07/26-10:37:36.048 11703 Reusing old log /Users/jose.lima/Desktop/Teste/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000148.log 
+2024/07/26-10:37:38.470 fc03 Level-0 table #155: started
+2024/07/26-10:37:38.489 fc03 Level-0 table #155: 31135 bytes OK
+2024/07/26-10:37:38.528 fc03 Delete type=0 #148
+2024/07/26-10:37:38.529 fc03 Manual compaction at level-0 from '\x00.\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00/\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/07/26-10:37:40.397 fc03 Compacting 1@1 + 3@2 files
+2024/07/26-10:37:40.513 fc03 Generated table #156@1: 27850 keys, 2191406 bytes
+2024/07/26-10:37:40.571 fc03 Generated table #157@1: 7402 keys, 2166632 bytes
+2024/07/26-10:37:40.674 fc03 Generated table #158@1: 44580 keys, 2252747 bytes
+2024/07/26-10:37:40.694 fc03 Generated table #159@1: 3 keys, 1729 bytes
+2024/07/26-10:37:40.694 fc03 Compacted 1@1 + 3@2 files => 6612514 bytes
+2024/07/26-10:37:40.730 fc03 compacted to: files[ 0 0 4 0 0 0 0 ]
+2024/07/26-10:37:40.730 fc03 Delete type=2 #155
+2024/07/26-10:37:40.730 fc03 Delete type=2 #152
+2024/07/26-10:37:40.730 fc03 Delete type=2 #151
+2024/07/26-10:37:40.730 fc03 Delete type=2 #150
