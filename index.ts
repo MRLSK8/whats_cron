@@ -31,10 +31,17 @@ app
 
     client.on("ready", async () => {
       console.log("Client is ready!");
-      // cron.schedule("35 11 * * 1-5", () => {
-      console.log("sending message");
-      client.sendMessage(Grupo_test, "Testando mensagem");
-      // });
+      cron.schedule(
+        "7 14 * * 1-5",
+        () => {
+          console.log("sending message");
+          client.sendMessage(Grupo_test, "Testando mensagem");
+        },
+        {
+          scheduled: true,
+          timezone: "America/Sao_Paulo",
+        }
+      );
     });
 
     client.initialize();
