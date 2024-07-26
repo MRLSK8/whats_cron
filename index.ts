@@ -5,14 +5,14 @@ const fastify = require("fastify");
 
 const app = fastify();
 
-// const { Client, LocalAuth } = require("whatsapp-web.js");
+const { Client, LocalAuth } = require("whatsapp-web.js");
 
-// const client = new Client({
-//   authStrategy: new LocalAuth(),
-// });
+const client = new Client({
+  authStrategy: new LocalAuth(),
+});
 
-const { Client } = require("whatsapp-web.js");
-const client = new Client();
+// const { Client } = require("whatsapp-web.js");
+// const client = new Client();
 
 app
   .listen({
