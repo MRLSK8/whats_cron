@@ -23,8 +23,8 @@ app
     console.log("running server");
 
     const Grupo_test = process.env.USER_ID;
-    console.log("Grupo_test", { Grupo_test });
     const Grupo_test_2 = process.env.USER_ID_2;
+    console.log("Grupo_test", { Grupo_test, Grupo_test_2 });
 
     client.on("qr", (qr) => {
       console.log("should read qr code");
@@ -34,9 +34,12 @@ app
     client.on("message", async (msg) => {
       const chat = await msg.getChat();
 
-      console.log({ msg, chat });
-      if(msg.body === "oiee"){
+      if (msg.body === "oiee") {
         await chat.sendMessage("Hello :)");
+      }
+
+      if (msg.body === "Te amo" || msg.body === "te amo" || msg.body === "te amoo") {
+        await chat.sendMessage("Tbm te amo muito minha princesa! S2");
       }
     });
 
@@ -44,7 +47,7 @@ app
       console.log("Client is ready!");
 
       cron.schedule(
-        "15 15 * * *",
+        "10 9 * * *",
         () => {
           console.log("sending message group 1");
           client.sendMessage(Grupo_test, "Como vc tá?");
@@ -55,17 +58,17 @@ app
         }
       );
 
-      // cron.schedule(
-      //   "45 8 * * 1",
-      //   () => {
-      //     console.log("sending message group 2");
-      //     client.sendMessage(Grupo_test_2, "Eu vou 🙋🏽‍♂️");
-      //   },
-      //   {
-      //     scheduled: true,
-      //     timezone: "America/Sao_Paulo",
-      //   }
-      // );
+      cron.schedule(
+        "45 8 * * 1",
+        () => {
+          console.log("sending message group 2");
+          client.sendMessage(Grupo_test_2, "Eu vou 🙋🏽‍♂️");
+        },
+        {
+          scheduled: true,
+          timezone: "America/Sao_Paulo",
+        }
+      );
     });
 
     client.initialize();
