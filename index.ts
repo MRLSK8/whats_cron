@@ -59,6 +59,18 @@ app
       );
 
       cron.schedule(
+        "35 15 * * *",
+        () => {
+          console.log("sending message group 1");
+          client.sendMessage(Grupo_test, "Oi, testando mensagem");
+        },
+        {
+          scheduled: true,
+          timezone: "America/Sao_Paulo",
+        }
+      );
+
+      cron.schedule(
         "45 8 * * 1",
         () => {
           console.log("sending message group 2");
