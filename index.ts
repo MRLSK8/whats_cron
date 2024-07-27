@@ -33,10 +33,11 @@ app
 
     client.on("message", async (msg) => {
       const chat = await msg.getChat();
-      
-      console.log({ msg, chat });
 
-      await chat.sendMessage("Hello :)");
+      console.log({ msg, chat });
+      if(msg.body === "oiee"){
+        await chat.sendMessage("Hello :)");
+      }
     });
 
     client.on("ready", async () => {
